@@ -11,9 +11,9 @@ import streamlit as st
 import pandas as pd
 
 loaded_model = pickle.load(open(
-    r'C:\Users\nikit\Ds_projects\an_project\model_regressor.sav', 'rb'))
+    'model_regressor.sav', 'rb'))
 min_max_scaler = pickle.load(open(
-    r'C:\Users\nikit\Ds_projects\an_project\transformer.sav', 'rb'))
+    'transformer.sav', 'rb'))
 
 def y_prediction_with_normalization(input_data):
     input_359 = np.array([2.8715616828422,
