@@ -35,7 +35,7 @@ def y_prediction_with_normalization(input_data):
     df_norm['Соотношение матрица-наполнитель'] = y_pred
     new_df = pd.DataFrame(min_max_scaler.inverse_transform(df_norm), 
                           columns = cols)
-    return y_pred
+    return new_df['Соотношение матрица-наполнитель'][0]
 
 def main():
     st.title('Предсказание параметра: соотношение матрица-наполнитель. Web app')
