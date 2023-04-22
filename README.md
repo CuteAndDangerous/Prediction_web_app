@@ -1,2 +1,2 @@
 # Prediction_web_app
-Prediction web app
+This app allow us to predict some parameters for buildings. 
